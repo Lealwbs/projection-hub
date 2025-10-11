@@ -1,0 +1,221 @@
+- Para mudar o título que você seleciona no menu Bible do ProPresenter, vá no arquivo rvmetadata.xml e altere aqui (dependendo da Bíblia grátis que você baixou, o <name>, como outras coisas, vária, obviamente):
+
+<name>King James Version</name>
+
+- Para mudar a abreviação que aparece no slide (com a opção Display Translation ativada), vá no arquivo rvmetadata.xml e altere aqui:
+-- Se essa linha não existir, apenas adicione ela após a linha do <name></name> (mencionada no item acima).
+
+<displayAbbreviation>KJV</displayAbbreviation>
+
+- Aqui estão da versão NAA:
+
+<name>Nova Almeida Atualizada</name>
+<displayAbbreviation>NAA</displayAbbreviation>
+
+---
+
+- No arquivo metadata.xml temos os nomes dos livros.
+-- O book code é o nome do arquivo .usx que ele vai procurar na pasta USX.
+-- O long, short e abbr são o nome que aparece para selecionar no menu Bible do ProPresenter e na referência do slide.
+-- Basta substituir a tag <bookNames> com isso:
+
+<bookNames>
+    <book code="GEN">
+        <short>Gênesis</short>
+    </book>
+    <book code="EXO">
+        <short>Êxodo</short>
+    </book>
+    <book code="LEV">
+        <short>Levítico</short>
+    </book>
+    <book code="NUM">
+        <short>Números</short>
+    </book>
+    <book code="DEU">
+        <short>Deuteronômio</short>
+    </book>
+    <book code="JOS">
+        <short>Josué</short>
+    </book>
+    <book code="JDG">
+        <short>Juízes</short>
+    </book>
+    <book code="RUT">
+        <short>Rute</short>
+    </book>
+    <book code="1SA">
+        <short>1 Samuel</short>
+    </book>
+    <book code="2SA">
+        <short>2 Samuel</short>
+    </book>
+    <book code="1KI">
+        <short>1 Reis</short>
+    </book>
+    <book code="2KI">
+        <short>2 Reis</short>
+    </book>
+    <book code="1CH">
+        <short>1 Crônicas</short>
+    </book>
+    <book code="2CH">
+        <short>2 Crônicas</short>
+    </book>
+    <book code="EZR">
+        <short>Esdras</short>
+    </book>
+    <book code="NEH">
+        <short>Neemias</short>
+    </book>
+    <book code="EST">
+        <short>Ester</short>
+    </book>
+    <book code="JOB">
+        <short>Jó</short>
+    </book>
+    <book code="PSA">
+        <short>Salmos</short>
+    </book>
+    <book code="PRO">
+        <short>Provérbios</short>
+    </book>
+    <book code="ECC">
+        <short>Eclesiastes</short>
+    </book>
+    <book code="SNG">
+        <short>Cântico dos Cânticos</short>
+    </book>
+    <book code="ISA">
+        <short>Isaías</short>
+    </book>
+    <book code="JER">
+        <short>Jeremias</short>
+    </book>
+    <book code="LAM">
+        <short>Lamentações</short>
+    </book>
+    <book code="EZK">
+        <short>Ezequiel</short>
+    </book>
+    <book code="DAN">
+        <short>Daniel</short>
+    </book>
+    <book code="HOS">
+        <short>Oséias</short>
+    </book>
+    <book code="JOL">
+        <short>Joel</short>
+    </book>
+    <book code="AMO">
+        <short>Amós</short>
+    </book>
+    <book code="OBA">
+        <short>Abdias</short>
+    </book>
+    <book code="JON">
+        <short>Jonas</short>
+    </book>
+    <book code="MIC">
+        <short>Miquéias</short>
+    </book>
+    <book code="NAM">
+        <short>Naum</short>
+    </book>
+    <book code="HAB">
+        <short>Habacuc</short>
+    </book>
+    <book code="ZEP">
+        <short>Sofonias</short>
+    </book>
+    <book code="HAG">
+        <short>Ageu</short>
+    </book>
+    <book code="ZEC">
+        <short>Zacarias</short>
+    </book>
+    <book code="MAL">
+        <short>Malaquias</short>
+    </book>
+    <book code="MAT">
+        <short>Mateus</short>
+    </book>
+    <book code="MRK">
+        <short>Marcos</short>
+    </book>
+    <book code="LUK">
+        <short>Lucas</short>
+    </book>
+    <book code="JHN">
+        <short>João</short>
+    </book>
+    <book code="ACT">
+        <short>Atos</short>
+    </book>
+    <book code="ROM">
+        <short>Romanos</short>
+    </book>
+    <book code="1CO">
+        <short>1 Coríntios</short>
+    </book>
+    <book code="2CO">
+        <short>2 Coríntios</short>
+    </book>
+    <book code="GAL">
+        <short>Gálatas</short>
+    </book>
+    <book code="EPH">
+        <short>Efésios</short>
+    </book>
+    <book code="PHP">
+        <short>Filipenses</short>
+    </book>
+    <book code="COL">
+        <short>Colossenses</short>
+    </book>
+    <book code="1TH">
+        <short>1 Tessalonicenses</short>
+    </book>
+    <book code="2TH">
+        <short>2 Tessalonicenses</short>
+    </book>
+    <book code="1TI">
+        <short>1 Timóteo</short>
+    </book>
+    <book code="2TI">
+        <short>2 Timóteo</short>
+    </book>
+    <book code="TIT">
+        <short>Tito</short>
+    </book>
+    <book code="PHM">
+        <short>Filemon</short>
+    </book>
+    <book code="HEB">
+        <short>Hebreus</short>
+    </book>
+    <book code="JAS">
+        <short>Tiago</short>
+    </book>
+    <book code="1PE">
+        <short>1 Pedro</short>
+    </book>
+    <book code="2PE">
+        <short>2 Pedro</short>
+    </book>
+    <book code="1JN">
+        <short>1 João</short>
+    </book>
+    <book code="2JN">
+        <short>2 João</short>
+    </book>
+    <book code="3JN">
+        <short>3 João</short>
+    </book>
+    <book code="JUD">
+        <short>Judas</short>
+    </book>
+    <book code="REV">
+        <short>Apocalipse</short>
+    </book>
+</bookNames>
